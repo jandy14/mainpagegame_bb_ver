@@ -1,0 +1,47 @@
+.leftside , .rightside{
+    height:50vh;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .leftside, .rightside{
+        height:100vh;
+    }
+}
+.logo{
+    margin: 0;
+    position: absolute;
+    top: 4px;
+    left: 12px;
+}
+.leftside{
+    background: linear-gradient(to bottom right, #27282b 0%, #0f1012 100%);
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
+    color: #dddddd;
+    font: serif;
+}
+
+.rightside{
+    background: linear-gradient(to bottom right , #eeeeee 0%, #dddddd 100%);
+    /*background: radial-gradient( at 70% 70%, #eeeeee 0%, #cccccc 70%, #dddddd 100%);*/
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.5);
+    color: #27282b;
+    font: serif;
+}
+.circle{
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin: 0;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -75px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
+}
+#canvas{
+    position: absolute;
+    display: none;
+}

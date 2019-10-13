@@ -2,7 +2,6 @@
 
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-    var width = 1000, height = 1000;
     var game = new Game();
 
     function Game() {
@@ -195,7 +194,6 @@
             requestAnimationFrame(game.Loop);
         }
     };
-
     function Player(x, y, w, h, s, f, c) {
         this.x = x;
         this.y = y;
@@ -310,8 +308,6 @@
             }
         }
     };
-
-    var game = new Game();
 
     function colCheck(shapeA, shapeB) {
         // get the vectors to check against
