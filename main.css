@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .leftside , .rightside{
     height:50vh;
     width: 100%;
@@ -11,6 +14,7 @@
 .logo{
     margin: 0;
     position: absolute;
+    color: #dddddd;
     top: 4px;
     left: 12px;
 }
@@ -20,6 +24,10 @@
     color: #dddddd;
     font: serif;
 }
+.leftside:hover{
+    text-decoration: underline;
+    color: #dddddd;
+}
 
 .rightside{
     background: linear-gradient(to bottom right , #eeeeee 0%, #dddddd 100%);
@@ -28,7 +36,12 @@
     color: #27282b;
     font: serif;
 }
+.rightside:hover{
+    text-decoration: underline;
+    color: #27282b;
+}
 .circle{
+    cursor: pointer;
     border-radius: 50%;
     background-color: #f0f0f0;
     margin: 0;
@@ -41,7 +54,23 @@
     margin: -75px 0 0 -75px;
     box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
 }
-#canvas{
+.canvasbox{
     position: absolute;
-    display: none;
+    margin: 0;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    top: 100%;
+    left: 0%;
+}
+.canvasbox.movetop{
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: auto;
+    height: auto;
+}
+#canvas{
+    margin: 0;
 }
