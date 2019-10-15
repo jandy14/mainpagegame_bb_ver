@@ -410,6 +410,8 @@
     })
     document.getElementsByClassName('circle')[0]
         .addEventListener('click', function (event) {
+            var circle = document.getElementsByClassName('circle')[0];
+            circle.innerHTML = "<h3>Drag<br/>and<br/>Release<h3>";
             var canvasbox = document.getElementsByClassName('canvasbox')[0];
             canvasbox.className = 'canvasbox movetop';
             if(!game.isStart)
